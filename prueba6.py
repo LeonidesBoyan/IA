@@ -40,7 +40,7 @@ def cargar_alarma():
 
 def detectar_rostro():
     success, img = cap.read()
-    img, faces = detector.findFaceMesh(img, draw=True)
+    img, faces = detector.findFaceMesh(img, draw=False)
     return img, faces
 
 def calcular_ratio_promedio(face):
